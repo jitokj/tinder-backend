@@ -32,8 +32,9 @@ app.post("/tinder/cards",(req,res)=>{
 })
 
 app.get("/tinder/cards",(req,res)=>{
-    cards.find(dbCard,(err,data)=>{
-        if(err){
+    cards.find((err,data)=>{
+        if(err)
+        {
             res.status(500).send(err);
         }
         else {
