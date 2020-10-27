@@ -9,7 +9,6 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 8002;
-// const Connection_url ="mongodb+srv://admin:Q6ER2pPNfuNLrRgf@cluster0.k9xfi.mongodb.net/tinderDb?retryWrites=true&w=majority"
 const Connection_url = process.env.API_URL;
 app.use(express.json());
 app.use(Cors());
